@@ -69,7 +69,7 @@
    - Namen in IP-Adressen aufgelöst
    
  - .local namen werden aufgelöst via
-  - mDNS
+   - mDNS
   
 - Applikation auf Layer 7
   - DHCP
