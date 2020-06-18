@@ -61,4 +61,13 @@ Remember it with the simple sentence: **P**lease **D**o **N**ot **T**hrow **S**a
 - SSL / TLS Security
 - VPN
 
-
+## Linux
+- ```ls```, ```ls``` ```-al``` : Files auflisten
+- ```ps```, ```ps aux``` : Prozesse anzeigen
+- ```cd``` : Change Directory
+- ```rm```, ```rm -r```, ☠️ ```rm -rf``` : Löschen
+- ```pwd``` : Momentanes Working Directory anzeigen
+- ```man``` : man pages
+- ```mkdir``` : Directory erstellen
+- ```mv``` : verschieben
+- ```cp``` : kopieren
