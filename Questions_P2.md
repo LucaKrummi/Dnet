@@ -6,7 +6,7 @@
   - stellt einen Layer 2 Link her
 
 - Routing verfolgen mit
-  - traceroute
+  - ```traceroute```
   
 - netstat
   - Zeigt offene Ports und Verbindungen an
@@ -33,13 +33,13 @@
   - verteilt Adressen
   
 - Routing table anzeigen
-  - route -v
+  - ```route -v```
   
 - IP bietet
   - Segmentierung
   
 - Ein Programm welches ICMP verwendet
-  - ping
+  - ```ping```
   
 - Diese Adressen sind *alle* global unique
   - MAC
@@ -48,28 +48,28 @@
   - Socket
   
 - DHCP Server auf Linux
-  - dnsmasq / dhcpd
+  - ```dnsmasq``` / ```dhcpd```
   
 - ethernet
   - verwendet CSMA/CD
   
 - IP Adressen für ein WLAN setzt man mit
-  - ifconfig
+  - ```ifconfig```
   
 - Hello an broadcast senden in 192.168.16.0/24
-  - echo "hello" | netcat -b -u 192.168.16.255
+  - ```echo "hello" | netcat -b -u 192.168.16.255```
   
 - Adressierung findet in folgendem Layer *nicht* statt
   - Layer 7
   
 - ARP request auslösen mit
-  - arping
+  - ```arping```
   
  - Mit DNS werden
    - Namen in IP-Adressen aufgelöst
    
  - .local namen werden aufgelöst via
-   - mDNS
+   - ```mDNS```
   
 - Applikation auf Layer 7
   - DHCP
@@ -90,10 +90,10 @@
   - übersetzt eine öffentliche IP in mehrere private IPs
 
 - Ein Interface konfiguriert man mit
-  -- ifconfig
+  - ```ifconfig```
   
 - Der Webbrowser interpretiert
-  - javascript
+  - ```javascript```
   
 - Für was kann ssh *nicht* verwendet werden
   - webserver
@@ -102,5 +102,5 @@
   - TCP
   
 - Datendurchsatz wird gemessen mit
- - iperf
+  - ```iperf```
   
