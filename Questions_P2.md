@@ -2,13 +2,13 @@
 
 ## Questions
 
-- wpa_supplicant
+- Was macht wpa_supplicant 
   - stellt einen Layer 2 Link her
 
 - Routing verfolgen mit
   - ```traceroute```
   
-- netstat
+- Was macht netstat
   - Zeigt offene Ports und Verbindungen an
   
 - Diese Packets werden *nie* geroutet
@@ -26,13 +26,13 @@
 - Ein TTL Flag existiert in
   - IP
   
-- Datagramm Protokoll
+- Was ist ein Datagramm Protokoll
   - UDP
   
-- DHCP
+- Was macht DHCP
   - verteilt Adressen
   
-- Routing table anzeigen
+- Wie tut man die Routing table anzeigen
   - ```route -v```
   
 - IP bietet
@@ -47,10 +47,10 @@
 - Interface zur Entwicklung von Netzwerkapplikationen
   - Socket
   
-- DHCP Server auf Linux
+- DHCP Server auf Linux heissen
   - ```dnsmasq``` / ```dhcpd```
   
-- ethernet
+- ethernet verwendet:
   - verwendet CSMA/CD
   
 - IP Adressen für ein WLAN setzt man mit
@@ -71,22 +71,22 @@
  - .local namen werden aufgelöst via
    - ```mDNS```
   
-- Applikation auf Layer 7
+- Eine Applikation auf Layer 7
   - DHCP
 
-- Flask ist
+- Flask ist 
   - Ein serverseitiges Python Framework
   
 - Socket Timeouts existieren in
   - TCP
   
-- /etc/network/interfaces
+- /etc/network/interfaces beinhaltet
   - beinhaltet Interfacekonfiguration
   
 - Die Verbreitung von IPv6 wurde gebremst von
   - NAT
   
-- NAT
+- Was macht NAT
   - übersetzt eine öffentliche IP in mehrere private IPs
 
 - Ein Interface konfiguriert man mit
