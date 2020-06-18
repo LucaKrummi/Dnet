@@ -72,11 +72,35 @@
   - mDNS
   
 - Applikation auf Layer 7
-  DHCP
+  - DHCP
 
 - Flask ist
   - Ein serverseitiges Python Framework
   
 - Socket Timeouts existieren in
   - TCP
+  
+- /etc/network/interfaces
+  - beinhaltet Interfacekonfiguration
+  
+- Die Verbreitung von IPv6 wurde gebremst von
+  - NAT
+  
+- NAT
+  - übersetzt eine öffentliche IP in mehrere private IPs
+
+- Ein Interface konfiguriert man mit
+  -- ifconfig
+  
+- Der Webbrowser interpretiert
+  - javascript
+  
+- Für was kann ssh *nicht* verwendet werden
+  - webserver
+  
+- Der 3-way-handshake ist ein Feature von
+  - TCP
+  
+- Datendurchsatz wird gemessen mit
+ - iperf
   
