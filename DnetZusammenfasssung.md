@@ -20,6 +20,7 @@ Remember it with the simple sentence: **P**lease **D**o **N**ot **T**hrow **S**a
 - Modulation (Analog / Digital) (Bsp. 1V = logisch 1, 0V = logisch 0)
 - Der Feind: Das Rauschen, SNR = Signal to Noise Ration,de: Signalrauschabstand
 - Kanal: definiert die maximale physikalische Datenübertragungsrate
+- DC-frei
 
 ### Data Link
 - Verarbeitung ```digital``` (keine Symbole mehr)
@@ -31,6 +32,17 @@ Remember it with the simple sentence: **P**lease **D**o **N**ot **T**hrow **S**a
 - Retransmission (optional) oft nur wenn physikalische Eigenschaften schlecht sind (z.B. WiFi)
 - Ack (optional)
 
+**Frame** 
+- Preamble
+- Header (Len, Flags)
+- Payload
+- Trailer (CRC, End of Frame)
+- Inter Frame Spacing
+  
+CSMA Collision Avoidance (CSMA/CD): Basis für heutiges Ethernet
+
+
+
 ### Network
 - Addressierung von Paketen
 - ... global oder lokal
@@ -38,6 +50,8 @@ Remember it with the simple sentence: **P**lease **D**o **N**ot **T**hrow **S**a
 - Strukturierung von Netzwerken (Subnet)
 - Datagramme (verbindungslos)
 - Error Detection
+
+
 
 ### Transport
 - Datagramme, verbindungslos (UDP)
@@ -72,8 +86,26 @@ Remember it with the simple sentence: **P**lease **D**o **N**ot **T**hrow **S**a
 - ```mv``` : verschieben
 - ```cp``` : kopieren
 
+## WIFI
+- ```iwcofnig``` für allgemeine Konfiguration
+- ```wpa_supplicant``` um sich mit einem AP zu assoziieren
+- ```iw``` für scan / stats
+- ```hostapd``` als Accesspoint betreiben
+
+---
 ## IPV 4 Adressen
 
-Bestehen aus **Netzteil* + ** Hostteil** 
+Bestehen aus **Netzteil* + **Hostteil** 
 
-Beispiel: ```vhdl hi```
+Beispiel: `192.168.1.1 / 255.255.255.0`
+- Der erste Teil ist die Adresse. Der zweite Teil ist die Subnetzmaske.
+- die Netzadresse ist immer die erste Adresse im Adressraum des Netzes
+- die Broadcastadresse ist immer die letzte Adresse im Adressraum des Netzes
+- alle Adressen dazwischen sind mögliche Hostadressen
+
+2^(Anzahl Hostbits) = Anzahl Adressen
+2(Anzahl Hostbits) - 2 = Anzahl gültige Adressen (Adressen - Host und Brodcastadresse)
+
+IPV 4 Knappheit
+  - NAT (Network Adress Translation) wandelt öffentliche Adressen (begrenzt) in private um
+
