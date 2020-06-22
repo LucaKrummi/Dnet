@@ -71,3 +71,9 @@ Remember it with the simple sentence: **P**lease **D**o **N**ot **T**hrow **S**a
 - ```mkdir``` : Directory erstellen
 - ```mv``` : verschieben
 - ```cp``` : kopieren
+
+## IPV 4 Adressen
+
+Bestehen aus **Netzteil* + ** Hostteil** 
+
+Beispiel: ```vhdl hi```
