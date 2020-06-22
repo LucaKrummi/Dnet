@@ -95,7 +95,7 @@ CSMA Collision Avoidance (CSMA/CD): Basis für heutiges Ethernet
 ---
 ## IPV 4 Adressen
 
-Bestehen aus **Netzteil* + **Hostteil** 
+Bestehen aus **Netzteil** / **Hostteil** 
 
 Beispiel: `192.168.1.1 / 255.255.255.0`
 - Der erste Teil ist die Adresse. Der zweite Teil ist die Subnetzmaske.
