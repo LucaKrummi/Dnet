@@ -3,15 +3,15 @@ Modul Digitale Netze FHNW - Zusammenfassung
 
 ## OSI LAYER
 
-Layers |	Protocol Data Unit (PDU)
---- | ---
-Layer 7 | Application	Data
-Layer 6 | Presentation	Data
-Layer 5 | Session	Data
-Layer 4 | Transport	Segment / Datagramm
-Layer 3 | Network	Packet
-Layer 2 | Data Link	Frame
-Layer 1 | Physical	Symbol
+Layers |	Protocol | Data Unit (PDU)
+--- | --- | ---
+Layer 7 | Application |	Data
+Layer 6 | Presentation |	Data
+Layer 5 | Session	| Data
+Layer 4 | Transport	| Segment / Datagramm
+Layer 3 | Network	| Packet
+Layer 2 | Data Link	| Frame
+Layer 1 | Physical | Symbol
 
 Remember it with the simple sentence: **P**lease **D**o **N**ot **T**hrow **S**alami **P**izza **A**way!
 
