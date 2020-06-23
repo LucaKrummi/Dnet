@@ -15,14 +15,14 @@ Layer 1 | Physical | Symbol
 
 Remember it with the simple sentence: **P**lease **D**o **N**ot **T**hrow **S**alami **P**izza **A**way!
 
-### Physical Layer
+### Physical Layer - Layer 1
 - Übertragung von Symbolen
 - Modulation (Analog / Digital) (Bsp. 1V = logisch 1, 0V = logisch 0)
 - Der Feind: Das Rauschen, SNR = Signal to Noise Ration,de: Signalrauschabstand
 - Kanal: definiert die maximale physikalische Datenübertragungsrate
 - DC-frei
 
-### Data Link
+### Data Link - Layer 2
 - Verarbeitung ```digital``` (keine Symbole mehr)
 - Media Access Control: MAC
 - Multiple Access: 1 Leitung, viele Stationen
@@ -43,7 +43,7 @@ CSMA Collision Avoidance (CSMA/CD): Basis für heutiges Ethernet
 
 
 
-### Network
+### Network - Layer 3
 - Addressierung von Paketen
 - ... global oder lokal
 - Routing von Paketen im Internet
@@ -53,7 +53,7 @@ CSMA Collision Avoidance (CSMA/CD): Basis für heutiges Ethernet
 
 
 
-### Transport
+### Transport - Layer 4
 - Datagramme, verbindungslos (UDP) (User datagram protocol)
 - Verbindungsorientiert (TCP) (Transmission control protocol)
 - Zusäztlich **Ports**
@@ -75,13 +75,13 @@ Ping verwendet ICMP.
 **SSH** 
 Secure Shell oder SSH bezeichnet ein kryptographisches Netzwerkprotokoll für den sicheren Betrieb von Netzwerkdiensten über ungesicherte Netzwerke.[1] Häufig wird es verwendet, um lokal eine entfernte Kommandozeile verfügbar zu machen, das heißt, auf einer lokalen Konsole werden die Ausgaben der entfernten Konsole ausgegeben und die lokalen Tastatureingaben werden an den entfernten Rechner gesendet. Genutzt werden kann dies beispielsweise zur Fernwartung eines in einem entfernten Rechenzentrum stehenden Servers.
 
-### Session and Presentation
+### Session and Presentation - Layer 5 & 6
 - Session: Management von Token etc.
 - Presentation: Datenformate mit Parser etc.
 
 > Wird heute praktisch alles im Application Layer abgehandelt
 
-### Application
+### Application - Layer 7
 - Interface via Sockets (```TCP``` und ```UDP```)
 - Frameworks und Sprachen
 - Python, C / C++, PHP, JS, Java, etc.
@@ -93,6 +93,15 @@ Secure Shell oder SSH bezeichnet ein kryptographisches Netzwerkprotokoll für de
 Ein Socket ist ein vom Betriebssystem bereitgestelltes Objekt, das als Kommunikationsendpunkt dient. Ein Programm verwendet Sockets, um Daten mit anderen Programmen auszutauschen. Das andere Programm kann sich dabei auf demselben Computer (Interprozesskommunikation) oder einem anderen, via Netzwerk erreichbaren Computer befinden. Die Kommunikation über Sockets erfolgt in der Regel bidirektional, das heißt, über das Socket können Daten sowohl empfangen als auch gesendet werden. (Server - client) für Netzwerkapplikationen.
 
 ## Linux
+Linux ist der Name des Betriebssystem Kerns.
+- Betriebssystem
+- Entwickelt von Linus Torvalds
+- Free Software (not free as in free Beer, free as in without shackles) ... Open Source
+- Klon von UNIX (siehe Buchautor Andrew S. Tanenbaum + Minix)
+- Verbreitet in Serversystemen
+- POSIX (Portable Operating System Interface)
+
+**Wichtige Befehle**
 - ```ls```, ```ls``` ```-al``` : Files auflisten
 - ```ps```, ```ps aux``` : Prozesse anzeigen
 - ```cd``` : Change Directory
