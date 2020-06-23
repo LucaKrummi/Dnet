@@ -54,12 +54,23 @@ CSMA Collision Avoidance (CSMA/CD): Basis für heutiges Ethernet
 
 
 ### Transport
-- Datagramme, verbindungslos (UDP)
-- Verbindungsorientiert (TCP)
+- Datagramme, verbindungslos (UDP) (User datagram protocol)
+- Verbindungsorientiert (TCP) (Transmission control protocol)
 - Zusäztlich **Ports**
 - Bei TCP: timeouts, retransmit, sequencing
 - Basis für praktisch alle Applikationen (im Minumum UDP)
 - API praktisch immer im Betriebssystem
+
+**DHCP**
+Das Dynamic Host Configuration Protocol (DHCP) ist ein Kommunikationsprotokoll in der Computertechnik. Es ermöglicht die Zuweisung der Netzwerkkonfiguration an Clients durch einen Server. Verteilt Adressen für die UDP Übertragung.
+
+**IP**
+Das Internet Protocol (IP) ist ein in Computernetzen weit verbreitetes Netzwerkprotokoll und stellt die Grundlage des Internets dar. Es ist die Implementierung der Internetschicht des TCP/IP-Modells bzw. der Vermittlungsschicht (engl. Network Layer) des OSI-Modells. IP ist ein verbindungsloses Protokoll, das heißt bei den Kommunikationspartnern wird kein Zustand etabliert. 
+IP kann seine Segmentgrösser regulieren (Segmentierung).
+
+**ICMP (Internet Control Message Protocol)**
+Das ICMP dient in Rechnernetzwerken dem Austausch von Informations- und Fehlermeldungen über das Internet-Protokoll in der Version 4 (IPv4). Für IPv6 existiert ein ähnliches Protokoll mit dem Namen ICMPv6. 
+Ping verwendet ICMP.
 
 ### Session and Presentation
 - Session: Management von Token etc.
@@ -92,7 +103,6 @@ CSMA Collision Avoidance (CSMA/CD): Basis für heutiges Ethernet
 - ```iw``` für scan / stats
 - ```hostapd``` als Accesspoint betreiben
 
----
 ## IPV 4 Adressen
 
 Bestehen aus **Netzteil** / **Hostteil** 
@@ -108,4 +118,17 @@ Beispiel: `192.168.1.1 / 255.255.255.0`
 
 IPV 4 Knappheit
   - NAT (Network Adress Translation) wandelt öffentliche Adressen (begrenzt) in private um
+
+## ARP (Address Resolution Protocol)
+Das ARP ist ein Netzwerkprotokoll, das zu einer Netzwerkadresse der Internetschicht die physische Adresse (Hardwareadresse, MAC) der Netzzugangsschicht ermittelt und diese Zuordnung gegebenenfalls in den ARP-Tabellen der beteiligten Rechner hinterlegt. 
+
+Funktioniert nur mit IPV 4, IPV 6 verwendet Neighbor Discovery Protocol (NDP).
+
+ARP - Packete werden nicht geroutet, sind somit für den User nicht sichtbar.
+
+## Diverses
+
+**```netstat```**
+Zeigt offene Ports und Verbindungen an (gelistet nach TCP UDP)
+
 
