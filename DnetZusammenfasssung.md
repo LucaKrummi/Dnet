@@ -62,7 +62,7 @@ CSMA Collision Avoidance (CSMA/CD): Basis für heutiges Ethernet
 - API praktisch immer im Betriebssystem
 
 **DHCP**
-Das Dynamic Host Configuration Protocol (DHCP) ist ein Kommunikationsprotokoll in der Computertechnik. Es ermöglicht die Zuweisung der Netzwerkkonfiguration an Clients durch einen Server. Verteilt Adressen für die UDP Übertragung.
+Das Dynamic Host Configuration Protocol (DHCP) ist ein Kommunikationsprotokoll in der Computertechnik. Es ermöglicht die Zuweisung der Netzwerkkonfiguration an Clients durch einen Server. Verteilt Adressen für die UDP Übertragung. DHCP ist eine Layer 7 Applikation. 
 
 **IP**
 Das Internet Protocol (IP) ist ein in Computernetzen weit verbreitetes Netzwerkprotokoll und stellt die Grundlage des Internets dar. Es ist die Implementierung der Internetschicht des TCP/IP-Modells bzw. der Vermittlungsschicht (engl. Network Layer) des OSI-Modells. IP ist ein verbindungsloses Protokoll, das heißt bei den Kommunikationspartnern wird kein Zustand etabliert. 
@@ -85,6 +85,9 @@ Ping verwendet ICMP.
 - HTTP (```www``` + Browser)
 - SSL / TLS Security
 - VPN
+
+**Socket (von engl. Sockel, Steckverbindung oder Steckdose)**
+Ein Socket ist ein vom Betriebssystem bereitgestelltes Objekt, das als Kommunikationsendpunkt dient. Ein Programm verwendet Sockets, um Daten mit anderen Programmen auszutauschen. Das andere Programm kann sich dabei auf demselben Computer (Interprozesskommunikation) oder einem anderen, via Netzwerk erreichbaren Computer befinden. Die Kommunikation über Sockets erfolgt in der Regel bidirektional, das heißt, über das Socket können Daten sowohl empfangen als auch gesendet werden. (Server - client) für Netzwerkapplikationen.
 
 ## Linux
 - ```ls```, ```ls``` ```-al``` : Files auflisten
