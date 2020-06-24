@@ -51,6 +51,9 @@ CSMA Collision Avoidance (CSMA/CD): Basis für heutiges Ethernet
 - Datagramme (verbindungslos)
 - Error Detection
 
+**IP**
+Das Internet Protocol (IP) ist ein in Computernetzen weit verbreitetes Netzwerkprotokoll und stellt die Grundlage des Internets dar. Es ist die Implementierung der Internetschicht des TCP/IP-Modells bzw. der Vermittlungsschicht (engl. Network Layer) des OSI-Modells. IP ist ein verbindungsloses Protokoll, das heißt bei den Kommunikationspartnern wird kein Zustand etabliert. 
+IP kann seine Segmentgrösser regulieren (Segmentierung).
 
 
 ### Transport - Layer 4
@@ -61,19 +64,10 @@ CSMA Collision Avoidance (CSMA/CD): Basis für heutiges Ethernet
 - Basis für praktisch alle Applikationen (im Minumum UDP)
 - API praktisch immer im Betriebssystem
 
-**DHCP**
-Das Dynamic Host Configuration Protocol (DHCP) ist ein Kommunikationsprotokoll in der Computertechnik. Es ermöglicht die Zuweisung der Netzwerkkonfiguration an Clients durch einen Server. Verteilt Adressen für die UDP Übertragung. DHCP ist eine Layer 7 Applikation. 
-
-**IP**
-Das Internet Protocol (IP) ist ein in Computernetzen weit verbreitetes Netzwerkprotokoll und stellt die Grundlage des Internets dar. Es ist die Implementierung der Internetschicht des TCP/IP-Modells bzw. der Vermittlungsschicht (engl. Network Layer) des OSI-Modells. IP ist ein verbindungsloses Protokoll, das heißt bei den Kommunikationspartnern wird kein Zustand etabliert. 
-IP kann seine Segmentgrösser regulieren (Segmentierung).
 
 **ICMP (Internet Control Message Protocol)**
 Das ICMP dient in Rechnernetzwerken dem Austausch von Informations- und Fehlermeldungen über das Internet-Protokoll in der Version 4 (IPv4). Für IPv6 existiert ein ähnliches Protokoll mit dem Namen ICMPv6. 
 Ping verwendet ICMP.
-
-**SSH** 
-Secure Shell oder SSH bezeichnet ein kryptographisches Netzwerkprotokoll für den sicheren Betrieb von Netzwerkdiensten über ungesicherte Netzwerke.[1] Häufig wird es verwendet, um lokal eine entfernte Kommandozeile verfügbar zu machen, das heißt, auf einer lokalen Konsole werden die Ausgaben der entfernten Konsole ausgegeben und die lokalen Tastatureingaben werden an den entfernten Rechner gesendet. Genutzt werden kann dies beispielsweise zur Fernwartung eines in einem entfernten Rechenzentrum stehenden Servers.
 
 ### Session and Presentation - Layer 5 & 6
 - Session: Management von Token etc.
@@ -88,6 +82,12 @@ Secure Shell oder SSH bezeichnet ein kryptographisches Netzwerkprotokoll für de
 - HTTP (```www``` + Browser)
 - SSL / TLS Security
 - VPN
+
+**DHCP**
+Das Dynamic Host Configuration Protocol (DHCP) ist ein Kommunikationsprotokoll in der Computertechnik. Es ermöglicht die Zuweisung der Netzwerkkonfiguration an Clients durch einen Server. Verteilt Adressen für die UDP Übertragung. DHCP ist eine Layer 7 Applikation. 
+
+**SSH** 
+Secure Shell oder SSH bezeichnet ein kryptographisches Netzwerkprotokoll für den sicheren Betrieb von Netzwerkdiensten über ungesicherte Netzwerke.[1] Häufig wird es verwendet, um lokal eine entfernte Kommandozeile verfügbar zu machen, das heißt, auf einer lokalen Konsole werden die Ausgaben der entfernten Konsole ausgegeben und die lokalen Tastatureingaben werden an den entfernten Rechner gesendet. Genutzt werden kann dies beispielsweise zur Fernwartung eines in einem entfernten Rechenzentrum stehenden Servers.
 
 **Socket (von engl. Sockel, Steckverbindung oder Steckdose)**
 Ein Socket ist ein vom Betriebssystem bereitgestelltes Objekt, das als Kommunikationsendpunkt dient. Ein Programm verwendet Sockets, um Daten mit anderen Programmen auszutauschen. Das andere Programm kann sich dabei auf demselben Computer (Interprozesskommunikation) oder einem anderen, via Netzwerk erreichbaren Computer befinden. Die Kommunikation über Sockets erfolgt in der Regel bidirektional, das heißt, über das Socket können Daten sowohl empfangen als auch gesendet werden. (Server - client) für Netzwerkapplikationen.
@@ -142,7 +142,7 @@ ARP - Packete werden nicht geroutet, sind somit für den User nicht sichtbar.
 ARP löst IP Adressen auf
 ARP request mit ```arping```
 
-## Diverses
+## Versuche
 
 **```netstat```**
 Zeigt offene Ports und Verbindungen an (gelistet nach TCP UDP)
