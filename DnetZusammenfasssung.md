@@ -138,8 +138,9 @@ IPV 4 Knappheit
 Das ARP ist ein Netzwerkprotokoll, das zu einer Netzwerkadresse der Internetschicht die physische Adresse (Hardwareadresse, MAC) der Netzzugangsschicht ermittelt und diese Zuordnung gegebenenfalls in den ARP-Tabellen der beteiligten Rechner hinterlegt. 
 
 Funktioniert nur mit IPV 4, IPV 6 verwendet Neighbor Discovery Protocol (NDP).
-
 ARP - Packete werden nicht geroutet, sind somit für den User nicht sichtbar.
+ARP löst IP Adressen auf
+ARP request mit ```arping```
 
 ## Diverses
 
