@@ -1,4 +1,4 @@
-# Dnet
-Modul Digitale Netze FHNW
+# FHNW
 
-Zusammenfassung und Fragen der Kurztests
+Diverse Module der FHNW.
+Zusammenfassungen und Fragenkataloge
