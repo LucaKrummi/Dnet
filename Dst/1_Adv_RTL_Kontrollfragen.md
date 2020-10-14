@@ -47,18 +47,18 @@ Folgende Formel muss eingehalten werden:
 - Tck-Q + Tmet + T_dly < Tperiod – Tsu 
 
 - Um T_dly möglichst klein zu halten:
- - darf sich keine Logik zwischen den FF's befinden
- - müssen die FF's sehr nahe beinander sein
- - dürfen die FF's keine anderen Verbindungen zu anderen Gates aufweisen (ausser das letzte)
+  - darf sich keine Logik zwischen den FF's befinden
+  - müssen die FF's sehr nahe beinander sein
+  - dürfen die FF's keine anderen Verbindungen zu anderen Gates aufweisen (ausser das letzte)
 
 7. Welche Problematik kommt hinzu, wenn ganze Datenbusse synchronisiert werden müssen?  
 - Nicht alle Leitungen verhalten sich gleich bei metastabilen Zuständen und somit können falsche zufällige Werte am Ausgang entstehen.
 
 8. Wie werden Datenbusse geeignet synchronisiert (mehrere Varianten)?  
 - Datenbusse können mit deb folgenden Variante gehandelt werden um das Problem aus Aufg.7 zu umgehen:
- - Graycode Codierung -> es gibt nur eine Änderung um ein bit
- - enable-based data synchronizer
- - FIFO-based synchronizer (Dual-Clock FIFO
+  - Graycode Codierung -> es gibt nur eine Änderung um ein bit
+  - enable-based data synchronizer
+  - FIFO-based synchronizer (Dual-Clock FIFO
 Separater Write- und Read-Port. Die Information über die Füllstände im FIFO werden synchronisiert. Dadurch kann es zu keinen Timing-Verletzungen beim Schreiben und Lesen kommen.)
 
 9. Welche Synchronisationsmethoden gibt es bei den Reset-Signalen? 
@@ -73,9 +73,10 @@ Separater Write- und Read-Port. Die Information über die Füllstände im FIFO w
 ## CORDIC
 
 1. Erklären Sie das Konzept des Cordic Algorithmus. 
-- Der Cordic (**Co**ordinate **R**otation **D**igital **C**omputer)
+- Der Cordic (**Co**ordinate **R**otation **D**igital **C**omputer) ist ein iterativer Algorithmus, welcher zum Mulitplizieren, Dividieren, sowie für trigometrische Funktionen eingesetz werden kann. Dabei benötigt er nur **Addierer** und **Schieberegister**.
 
-2. Welche Zusammenhänge bestehen zwischen tan(φ) und 2-i?
+2. Welche Zusammenhänge bestehen zwischen tan(φ) und 2^{-i}?
+- tan(\phi_{i}) = 2^{-i}
  
 3. Was hat es auf sich mit den Skalier-Faktoren 0.6073 und 1.647? 
 
