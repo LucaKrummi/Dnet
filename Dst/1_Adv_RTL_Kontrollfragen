@@ -9,13 +9,20 @@
 ## CDC - Clock Domain Crossing
 1. Erklären Sie das Phänomen von Metastabilen Zuständen bei Flipflops und warum
 diese in der Digitalen Schaltungstechnik unerwünscht sind.
-- Bei Clockübergängen kann es zu Metastabilden Zuständen kommen, das ist ein
-unzulässiger logischer Ausgangspegel eines FF’s. Diese unzulässigen Ausgangspegel
-können nicht korrekt weiterverarbeitet werden und führen dabei zu problemen. 
+-  Bei Clockflanken kann es zu metastabilen Zuständen kommen, das ist ein
+unzulässiger logischer Ausgangspegel eines FF’s (Also zwischen 0 und 1)
+Diese unzulässigen Ausgangspegel können nicht korrekt weiterverarbeitet werden
+und führen dabei zu Problemen.  Ausserdem ist der weiterverarbeitet Zustand
+eine zufälliger Wert, also LOW oder HIGH.
 
 2. Wann kommt es zu Metastabilen Zuständen bei Flipflops?
-- Wenn es in einer Schaltung mehrere Clocks gibt, kann es bei den Clockübergängen
- zu Metastabilen Zuständen kommen. 
+-  Wenn es in einer Schaltung mehrere Clocks gibt, kann es bei den Clockübergängen
+ zu metastabilen Zuständen kommen. 
+- Ein nicht synchronisiertes Signal kann einen unzulässigen Zustand auslösen
+Innerhalb eines bestimmten Setup / Hold - Windows muss das Eingangssignal stabil
+sein. Ein Wechsel in dieser Zeit bewirkt metastabile Zutände.
+
+![](Invalid.png)
 
 3. Wie helfen einem ein RTL Simulator oder ein Statischer Timing Analyzer bei der
  Suche nach Metastabilen Zuständen?
@@ -26,6 +33,7 @@ können nicht korrekt weiterverarbeitet werden und führen dabei zu problemen.�
 - Tck-Q + Tmet + Tdly < Tperiod – Tsu 
 
 5. Welche Gefahren lauern bei SRL (Shieberegister) und Bock RAM (BRAM)?  
+
 
 6. Welche Synthese Constraints sollte man bei 2-FF Synchronizer definieren?  
 
