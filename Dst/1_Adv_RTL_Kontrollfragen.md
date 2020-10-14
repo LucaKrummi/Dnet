@@ -2,6 +2,7 @@
 [comment]: <> (Open the markdown window with CTRL+SHIFT+M)
 
 
+
 # Dst
 ## Kontrollfragen Dst Advanced RTL
 ### HS 2020 - Luca Krummenacher
@@ -75,19 +76,27 @@ Separater Write- und Read-Port. Die Information über die Füllstände im FIFO w
 1. Erklären Sie das Konzept des Cordic Algorithmus. 
 - Der Cordic (**Co**ordinate **R**otation **D**igital **C**omputer) ist ein iterativer Algorithmus, welcher zum Mulitplizieren, Dividieren, sowie für trigometrische Funktionen eingesetz werden kann. Dabei benötigt er nur **Addierer** und **Schieberegister**.
 
-2. Welche Zusammenhänge bestehen zwischen tan(φ) und 2^{-i}?
-- tan(\phi_{i}) = 2^{-i}
+2. Welche Zusammenhänge bestehen zwischen tan(&phi;) und 2<sup>-i</sup>?
+- tan(&phi;<sub>i </sub>) = 2<sup>-i</sup>
  
 3. Was hat es auf sich mit den Skalier-Faktoren 0.6073 und 1.647? 
+Der Fehler der Amplitude konvergiert für unendlich viele Rotationen nach 0.6073.
+Die Verstärkung An konvergiert deshalb nach 1.647.
 
 4. Was ist der Unterschied zwischen dem Rotations-Mode und dem Vector-Mode? 
+- Beim **Rotations-Mode** wird der Vektor so lange gedreht, bis der Drehwinkel z gegen 0 geht.
+- Beim **Vector-Mode** wird der Vektor so gedreht, dass sich die y Komponente verkleinert.
 
 5. Was ist der Unterschied zwischen dem Zirkulären Mode und dem Linearen Mode? 
 
+
 6. Wie wird ein Vektor um 90 Grad gedreht? 
+
 
 7. Wie wird ein Vektor um 180 Grad gedreht? 
 
+
 8. Aus welchen Elementen besteht die Hardware, um eine Cordic-Iteration zu berechnen?
+Nur aus **Addierer** und **Schieberegister**.
  
 9. Skizzieren die Hardware für eine Cordic-Iteration.
