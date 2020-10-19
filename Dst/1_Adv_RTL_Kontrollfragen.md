@@ -103,4 +103,4 @@ Die Verstärkung An konvergiert deshalb nach 1.647.
 Nur aus **Addierer** und **Schieberegister**.
  
 9. Skizzieren die Hardware für eine Cordic-Iteration.
-![](CordicSchaltung.png)  
+![](cordicSchaltung.png)  
