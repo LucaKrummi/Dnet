@@ -89,15 +89,18 @@ Die Verstärkung An konvergiert deshalb nach 1.647.
 
 5. Was ist der Unterschied zwischen dem Zirkulären Mode und dem Linearen Mode? 
 - Beim **linearen Mode** ist m = 0. Dadurch lassen sich **Mulitplikation** und **Divisionen** durchführen.
-- Beim **zirkulären oder auch hyperbolischen Mode** 
+- Beim **zirkulären oder auch hyperbolischen Mode** werden für m = 1 **Winkelfunktionen**, für m = -1 **hyperbolische Funktionen** berechnet.
 
 6. Wie wird ein Vektor um 90 Grad gedreht? 
+- 
 
 
 7. Wie wird ein Vektor um 180 Grad gedreht? 
+- Dabei wird das Vorzeichen vertauscht.
 
 
 8. Aus welchen Elementen besteht die Hardware, um eine Cordic-Iteration zu berechnen?
 Nur aus **Addierer** und **Schieberegister**.
  
 9. Skizzieren die Hardware für eine Cordic-Iteration.
+![](CordicSchaltung.png)  
