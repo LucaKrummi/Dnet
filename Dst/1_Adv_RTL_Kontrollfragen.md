@@ -79,8 +79,8 @@ Separater Write- und Read-Port. Die Information über die Füllstände im FIFO w
 2. Welche Zusammenhänge bestehen zwischen tan(&phi;) und 2<sup>-i</sup>?
 - tan(&phi;<sub>i </sub>) = 2<sup>-i</sup>
  
-3. Was hat es auf sich mit den Skalier-Faktoren 0.6073 und 1.647? 
-Der Fehler der Amplitude konvergiert für unendlich viele Rotationen nach 0.6073.
+3. Was hat es auf sich mit den Skalier-Faktoren 0.6073 und 1.647?
+- Der Fehler der Amplitude konvergiert für unendlich viele Rotationen nach 0.6073.
 Die Verstärkung An konvergiert deshalb nach 1.647.
 
 4. Was ist der Unterschied zwischen dem Rotations-Mode und dem Vector-Mode? 
@@ -88,7 +88,8 @@ Die Verstärkung An konvergiert deshalb nach 1.647.
 - Beim **Vector-Mode** wird der Vektor so gedreht, dass sich die y Komponente verkleinert.
 
 5. Was ist der Unterschied zwischen dem Zirkulären Mode und dem Linearen Mode? 
-
+- Beim **linearen Mode** ist m = 0. Dadurch lassen sich **Mulitplikation** und **Divisionen** durchführen.
+- Beim **zirkulären oder auch hyperbolischen Mode** 
 
 6. Wie wird ein Vektor um 90 Grad gedreht? 
 
